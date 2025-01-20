@@ -1,4 +1,9 @@
-import { DISCORD_INVITE_LINK, SWAPR_DOCS_BASE_URL, SWAPR_DOCS_PATH_URLS } from '../constants'
+import {
+  DISCORD_INVITE_LINK,
+  SWAPR_DOCS_BASE_URL,
+  SWAPR_DOCS_PATH_URLS,
+  LIQUIDITY_V3_INFO_POOLS_LINK,
+} from '../constants'
 
 import BNBLogo from './../assets/images/BNBLogo.svg'
 import ArbitrumLogo from './../assets/images/logo-Arbitrum.svg'
@@ -151,11 +156,15 @@ export const FooterContent = {
       title: 'Product',
       footerLinks: [
         {
-          label: 'Pools',
+          label: 'Pools V2',
           href: '/pools',
         },
         {
-          label: 'Rewards',
+          label: 'Pools V3',
+          href: `${LIQUIDITY_V3_INFO_POOLS_LINK}`,
+        },
+        {
+          label: 'Rewards V2',
           href: '/rewards',
         },
       ],
@@ -164,12 +173,12 @@ export const FooterContent = {
       title: 'About',
       footerLinks: [
         {
-          label: 'FAQ',
-          href: `${SWAPR_DOCS_BASE_URL}${SWAPR_DOCS_PATH_URLS.FAQ}`,
+          label: 'Docs',
+          href: `${SWAPR_DOCS_BASE_URL}`,
         },
         {
-          label: 'Blog',
-          href: 'https://medium.com/swapr',
+          label: 'FAQ',
+          href: `${SWAPR_DOCS_BASE_URL}${SWAPR_DOCS_PATH_URLS.FAQ}`,
         },
         {
           label: 'Audits',
@@ -195,6 +204,10 @@ export const FooterContent = {
         {
           label: 'Forum',
           href: 'https://daotalk.org/c/dx-dao/15',
+        },
+        {
+          label: 'Blog',
+          href: 'https://medium.com/swapr',
         },
       ],
     },
