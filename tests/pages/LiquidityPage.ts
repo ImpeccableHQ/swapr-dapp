@@ -40,11 +40,12 @@ export class LiquidityPage {
     return cy.get('[data-testid=user-pool-balance]')
   }
   static getFirstTokenBalance() {
-    return cy.get('[data-testid=first-token-balance]')
+    return cy.get('[data-testid=token-balance]').eq(0)
   }
   static getSecondTokenBalance() {
-    return cy.get('[data-testid=second-token-balance]')
+    return cy.get('[data-testid=token-balance]').eq(1)
   }
+
   static getUsersPoolShare() {
     return cy.get('[data-testid=pool-share]')
   }
